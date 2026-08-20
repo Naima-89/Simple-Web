@@ -1,27 +1,21 @@
-Simple Web— Git & GitHub Capstone
+# Simple Web — Git & GitHub Capstone
 
-Description
+## Description
 
-This project is a simple web project created as a final capstone for the Git & GitHub Bootcamp. It demonstrates the complete Git and GitHub workflow, including commits, branching, pull requests, issues, code review, and GitHub Actions.
+This project is a simple web project created as a comprehensive final capstone for the Git & GitHub Bootcamp. It demonstrates a complete, industry-standard Git and GitHub collaboration workflow from start to finish, including atomic commits, structured branching, pull requests, issue tracking, peer code review, and automated CI/CD checks using GitHub Actions.
 
-Features
+## Features
 
-- Simple web project structure
-- Organized Git commit history
-- Feature branches
-- Pull requests and code review
-- GitHub Issues
-- GitHub Actions automation
+- **Simple Web Project Structure:** Clean separation of concern across front-end files for clear version tracking.
+- **Organized Git Commit History:** Meaningful, disciplined commit messages following standardized conventions.
+- **Feature Branches:** Isolated development environments for adding styles, features, and documentation without affecting `main`.
+- **Pull Requests and Code Review:** Full review process incorporating line-by-line comments, conflict resolution, and merge verification.
+- **GitHub Issues:** Complete task management tracking bugs, feature requests, and project improvements.
+- **GitHub Actions Automation:** Configured CI/CD workflows to automatically run checks and verify updates upon pushing.
 
-Technologies
+## Technologies
 
-- HTML
-- CSS
-- JS
+- **HTML:** Semantic structure for web content.
+- **CSS:** Styling, color variables, and visual layouts.
+- **JS:** Dynamic interactive logic for browser environments.
 
-
-How to Run
-
-1. Clone the repository.
-2. Open the project folder.
-3. Open "index.html" in a web browser.
