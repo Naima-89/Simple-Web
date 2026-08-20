@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nimca — Developer Portfolio</title>
+   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">NIMCA</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="subtitle">/ PORTFOLIO SHOWCASE</p>
+      <h1>Nimca</h1>
+      <p class="tagline">Web Developer & Front-End Specialist</p>
+    </div>
+  </section>
+
+  <section id="about" class="grid-section">
+    <div class="col left-col">
+      <h2>About Me</h2>
+      <p class="description">  Computer Science student passionate about creating clean, responsive, and user-friendly web experiences.
+  Focused on front-end development, modern web technologies, and building practical projects through continuous learning.
+
+      </p>
+    </div>
+
+    <div id="skills" class="col right-col">
+      <h2>Tech Stack & Skills</h2>
+      <div class="skills-grid">
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">SQL</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="section-header">
+      <p class="subtitle">/ FEATURED WORKS</p>
+      <h2>Selected Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card" data-title="Web Application Interface" data-detail="Built responsive user interfaces utilizing Semantic HTML5 and modular CSS3 architecture for optimal rendering performance.">
+        <div class="card-number">01</div>
+        <h3>Web Application Interface</h3>
+        <p>A responsive web interface developed using clean HTML layout practices and modular CSS styling.</p>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JS</span>
+        </div>
+      </article>
+
+      <article class="project-card" data-title="Database Management System" data-detail="Designed relational database schemas, crafted complex SQL queries, and organized relational data structures for backend integration.">
+        <div class="card-number">02</div>
+        <h3>Database Management System</h3>
+        <p>Structured database schemas and optimized SQL queries to support data querying and storage workflows.</p>
+        <div class="tags">
+          <span>SQL</span>
+          <span>Relational DB</span>
+        </div>
+      </article>
+
+      <article class="project-card" data-title="Git Version Control Workflow" data-detail="Managed code repository structures using multi-branch Git strategies, tracked commit history, and configured automated GitHub Actions workflows.">
+        <div class="card-number">03</div>
+        <h3>Git Version Control Workflow</h3>
+        <p>Automated deployment workflows and structured version management using Git branching strategies and GitHub.</p>
+        <div class="tags">
+          <span>Git</span>
+          <span>GitHub</span>
+          
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div class="footer-content">
+      <h2>Let's Connect</h2>
+      <p>Open for collaboration and web development opportunities.</p>
+      <button id="contactBtn" class="btn">Get in Touch</button>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nimca.</p>
+    </div>
+  </footer>
+
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h3 id="modalTitle">Project Title</h3>
+      <p id="modalDetail">Project Details go here...</p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const modal = document.getElementById("projectModal");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalDetail = document.getElementById("modalDetail");
+      const closeModal = document.getElementById("closeModal");
+      const projectCards = document.querySelectorAll(".project-card");
+
+      projectCards.forEach(card => {
+        card.addEventListener("click", () => {
+          modalTitle.textContent = card.getAttribute("data-title");
+          modalDetail.textContent = card.getAttribute("data-detail");
+          modal.style.display = "flex";
+        });
+      });
+
+      closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+      });
+
+      window.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+
+      const contactBtn = document.getElementById("contactBtn");
+      contactBtn.addEventListener("click", () => {
+        alert("Thank you for reaching out! You can connect with Nimca directly via GitHub or Email.");
+      });
+    });
+  </script>
+</body>
+</html>
