@@ -19,3 +19,8 @@ This project is a simple web project created as a comprehensive final capstone f
 - **CSS:** Styling, color variables, and visual layouts.
 - **JS:** Dynamic interactive logic for browser environments.
 
+## How to Run
+
+.**Clone the repository:**
+   ```bash
+   git clone [https://github.com/Naima-89/Simple-Web.git](https://github.com/Naima-89/Simple-Web.git)
