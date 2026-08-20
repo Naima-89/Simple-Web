@@ -15,9 +15,9 @@ This project is a simple web project created as a comprehensive final capstone f
 
 ## Technologies
 
-- **HTML:** Semantic structure for web content.
-- **CSS:** Styling, color variables, and visual layouts.
-- **JS:** Dynamic interactive logic for browser environments.
+- **HTML:** 
+- **CSS:** 
+- **JS:**
 
 ## How to Run
 
