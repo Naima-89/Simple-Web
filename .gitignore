@@ -3,4 +3,7 @@
 Thumbs.db
 *.log
 .env
+<<<<<<< HEAD
 node_modules/
+=======
+>>>>>>> 2813eb81e3324365d01ffe23332ac2d5e8d83f6e
